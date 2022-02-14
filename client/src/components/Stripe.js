@@ -18,7 +18,7 @@ const Stripe = ({subtotal}) => {
     }
   return (
     <>{ loading && <Loading />  }
-    {error && <Error error="Problem in transaction"/>}
+    {error && <Error error="Transaction failed, login first."/>}
     {success&&<Success success="Transaction successfull" />}
       <StripeCheckout
         name="Rajneesh Kumar Singh"

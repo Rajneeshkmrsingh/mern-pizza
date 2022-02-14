@@ -28,14 +28,14 @@ const Login = () => {
     }
     return (
         <div className='loginScreen'>
-            <div className="login container mx-auto">
-                <div className="row justify-content-center mx-5">
-                    <div className="col-md-6 px-5 shadow-lg p-3 mb-5 bg-white rounded">
+            <div className="login container-sm mx-auto">
+                <div className="row justify-content-center mx-2">
+                    <div className="col-md-6 col-12 shadow-lg p-3 mb-5 bg-white rounded">
                         <h1 className='text-center loginHeader'>Login</h1>
                         <h4 className='text-center'>{loading?<Loading/>:error?<Error error="Bad Credentials"/>:success?<Success success="Login successfull"/>:""}</h4>
                         <form onSubmit={submit}>
                             <input type="text" placeholder='Email' required className='form-control my-3'name = "email" onChange={change} value={data.email}/>
-                            <input type="text" placeholder='Password' required className='form-control my-3' name="password" onChange={change} value={data.password}/>
+                            <input type="text" placeholder='Password' required className='form-control my-3' name="password" onChange={change} value={data.password} autoComplete="off"/>
                             <button className='formBtn'>Submit</button><br />
                             <a href="/register" className='formLink'>Click here to Register</a>
                         </form>

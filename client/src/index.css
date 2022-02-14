@@ -203,7 +203,9 @@ ul{padding:0 !important; list-style: none;}
 }
 
 
-/* @media screen and (min-width:576px) {
-  
-} */
+@media screen and (max-width:576px) {
+  .register h1,.login h1{
+    font-size: 25px;
+  }
+}
 
