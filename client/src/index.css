@@ -144,7 +144,13 @@ ul{padding:0 !important; list-style: none;}
 }
 
 /*--------------------- Register & login-------------------------- */
+.loginScreen,.registerScreen{
+  background-image: url("./images/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 82vh;
 
+}
 .register input,.login input{
   border: 1px solid #5a5959;
 }

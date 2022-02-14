@@ -38,7 +38,7 @@ const Register = () => {
         }
     }
     return (
-        <>
+        <div className='registerScreen'>
             <div className="register container mx-auto">
                 <div className="row justify-content-center mx-5">
                     <div className="col-md-6 px-5 shadow-lg p-3 mb-5 bg-white rounded">
@@ -55,7 +55,7 @@ const Register = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
