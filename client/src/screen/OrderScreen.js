@@ -31,7 +31,7 @@ const OrderScreen = () => {
             {orders.map((order) => {
               return (
                 <>
-                  <div className="d-flex m-2 p-3" style={{backgroundColor:"red",color:"#fff",borderRadius:"5px"}} data-aos="fade-left">
+                  <div className="d-flex m-2 p-3 table-responsive-sm" style={{backgroundColor:"red",color:"#fff",borderRadius:"5px"}} data-aos="fade-left">
                     <div className="w-100">
                       <h3 style={{ fontSize: "25px"}}>
                         Item
