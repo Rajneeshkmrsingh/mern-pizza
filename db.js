@@ -1,6 +1,8 @@
+//const dotenv = require("dotenv")
 const mongoose = require("mongoose");
 
-const mongoURL="mongodb+srv://rajneeshsingh:rajneesh123@cluster0.pwwht.mongodb.net/mern-pizza"
+require('dotenv').config({path:"./config.env"});
+const mongoURL = process.env.DATABASE;
 mongoose.connect(mongoURL,{useUnifiedTopology:true,useNewUrlParser:true})
 
 const db = mongoose.connection
