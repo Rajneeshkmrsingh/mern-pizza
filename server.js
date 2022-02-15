@@ -1,11 +1,11 @@
 const express = require("express");
-const dotenv = require("dotenv")
+
 const Pizza = require("./models/pizzamodel");
 const path = require("path");
 const cors = require("cors");
 
 const db = require("./db");
-//dotenv.config({path:"/config.env"})
+
 
 const pizzaroute = require("./router/pizzaroute");
 const userRoute = require("./router/userRoute")
